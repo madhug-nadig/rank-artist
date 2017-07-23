@@ -3,11 +3,21 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 
 
 var app = express();
+
+var url = 'mongodb://127.0.0.1:27017/rank-artist';
+mongoose.connect(url);
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', function () {
+    console.log("Connected correctly to the database server");
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

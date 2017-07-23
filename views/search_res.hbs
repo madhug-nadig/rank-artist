@@ -1,7 +1,7 @@
-    <link rel="stylesheet" href="/css/city.css">
-  <script type="text/javascript" src="/js/city-script.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Rajdhani:700" rel="stylesheet">
+<link rel = "stylesheet" href = "/css/res.css">
 
 
 <script type = "text/javascript">
@@ -34,10 +34,19 @@ body{
       <div class="container">
         <div class = "content" id = "content">
           <div class="content-wrap">
-            <h3>Search Results</h3>
+            <h3>Results For: <span style = "font-size:3em">{{title}}</span></h3>
+              <div class = "row">
+                <div class = "col-md-12">
                   <ul class = "lop" id = "lop">
                   </ul>
-                     
+                </div>
+                <!--<div id = "graph">
+                  <canvas id = "line"></canvas>
+                </div>-->
+
+                </div>
+              </div>
+
             </div><!-- /content -->
         </div><!-- /container -->
       </div>
@@ -55,14 +64,56 @@ body{
     <script>
 
     function dispit(){
+      id_counter = 0;
+      console.log(searchlist);
+      searchlist = searchlist.sort(function(b, a) {return parseFloat(a.final_score) - parseFloat(b.final_score);});
+      console.log(searchlist);
 
-    document.getElementById('lop').innerHTML = placelist.map(function(place) {
-            return '<li class = "lcont"><a href = "#' + place.city.toLowerCase() +'/' + place.shorthand+'"><h2>' + place.name + '</h2><h3>' + place.categories + '</h3></a></li>';
+    document.getElementById('lop').innerHTML = searchlist.map(function(res) {
+            id_counter++;
+            return '<div class = "row"><div class = "col-md-8"><div class = "res_list"><li class = "lcont"><a href = "' + res.link + '"><h3>' + res.title + '</h3></a><h4>' + res.content + '</h4></li> <div class = "row stats"><div class = "col-md-3 numeric" >'+ Math.round(100*res.topic_score)/100 + '</div><div class = "col-md-3 numeric">'+ Math.round(100 * res.luhn_score)/100 + '</div><div class = "col-md-3 numeric">'+ Math.round(100*res.lang_score)/100 + '</div><div class = "col-md-3 numeric">'+ res.text_score + '</div></div><div class = "row stats"><div class = "col-md-3">Topic Score</div><div class = "col-md-3">Summerization metric</div><div class = "col-md-3">Language Score</div><div class = "col-md-3">Text Score</div></div></div></div> <div class = "col-md-4"><div class = "graph"> <h2>MERTICS</h2> <canvas id = "'+ id_counter+'"> </canvas></div> </div></div>';
     }).join('');
-    
+
+
+      for(var x =1; x < searchlist.length+1; x++){
+        d = [searchlist[x-1].topic_score, searchlist[x-1].luhn_score, searchlist[x-1].lang_score, searchlist[x-1].text_score, searchlist[x-1].final_score]
+        line(x.toString(), d);
+      }
     }
+    
     window.onload = function(){
       dispit();
+      //line();
+    }
+    </script>
+    <script>
+    function line(id, d){
+      var options = {
+        type: 'line',
+        data: {
+          labels: ["TOP", "SUM", "LANG", "TEX", "FIN"],
+          datasets: [
+            {
+              label: 'Score',
+              data: d,
+              borderWidth: 1,
+              backgroundColor: 'rgba(105,210,231,0.5)'
+            }
+          ]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                reverse: false
+              }
+            }]
+          }
+        }
+      }
+
+      var ctx = document.getElementById(id).getContext('2d');
+      new Chart(ctx, options);
     }
     </script>
  
