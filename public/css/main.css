@@ -3,7 +3,7 @@
 
 .jumbotron {
   position: relative;
-  background-image:url('../Images/B.jpg');
+  background-image:url('/images/B.jpg');
   width: 100%;
   min-height: 100%;
   background-repeat: no-repeat;
