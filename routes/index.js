@@ -30,7 +30,8 @@ router.get('/search', function(req, res, next) {
   		console.log(err);
   	}
   	if(data.length == 0){
-  		res.redirect('/cached')
+  		d = ['/search?q=What+is+the+state+of+the+art+on+autonomous+cars+%3F', '/search?q=what+is+the+best+ubisoft+game', '/search?q=Which+are+the+best+games+of+2017+%3F', 'http://localhost:3000/search?q=what+is+the+review+on+assassin%27s+creed+%3F','http://localhost:3000/search?q=How+strategically+challenging+are+Ubisoft+games%3F', 'http://localhost:3000/search?q=How+much+is+the+price+of+a+tesla+', 'http://localhost:3000/search?q=Which+is+the+most+expensive+gaming+device+%3F', 'http://localhost:3000/search?q=Did+the+popularity+of+Assassin%27s+Creed+decrease+from+the+year+2016+to+2017+%3F']
+  		res.redirect( d[(Math.floor(Math.random() * ((d.length-1) - 0 + 1)) + 0)]+ '&redirect=true')
   	}
   	else{
 		res.render('search_res', 

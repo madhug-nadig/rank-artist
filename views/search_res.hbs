@@ -116,4 +116,20 @@ body{
       new Chart(ctx, options);
     }
     </script>
- 
+ <script type="text/javascript">
+   function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var foo = getParameterByName('redirect');
+if(foo){
+  alert("Sorry, query not cached, here is a sample query. There will be new sample everytime.")
+}
+
+ </script>
