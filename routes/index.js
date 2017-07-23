@@ -6,7 +6,7 @@ var caches = require('../models/caches');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Rank Artist - By Neural Titanium' });
 });
 
 
@@ -24,17 +24,28 @@ router.get('/search', function(req, res, next) {
         }]
         */
 
-  caches.find({}, function(err, data){
+  caches.find({"query": req.query.q + '\n'}, function(err, data){
   	console.log(data);
   	if(err){
   		console.log(err);
   	}
-	res.render('search_res', 
-	        { title: req.query.q,
-	          results : JSON.stringify(data)
-	        });
+  	if(data.length == 0){
+  		res.redirect('/cached')
+  	}
+  	else{
+		res.render('search_res', 
+		        { title: req.query.q,
+		          results : JSON.stringify(data)
+		        });
+		}
 	});
+
 });
+
+router.get('/cached', function(req, res, next) {
+  res.render('cache', { title: 'Cached Results' });
+});
+
 
 
 module.exports = router;

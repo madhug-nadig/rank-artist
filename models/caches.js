@@ -33,6 +33,10 @@ var cacheSchema = new Schema({
     text_score: {
         type: Number,
         required: true
+    },
+    query:{
+        type: String,
+        required: true
     }
 }, {
     timestamps: true
