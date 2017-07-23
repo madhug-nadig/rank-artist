@@ -1,0 +1,68 @@
+    <link rel="stylesheet" href="/css/city.css">
+  <script type="text/javascript" src="/js/city-script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+
+
+<script type = "text/javascript">
+    searchlist = {{{results}}};
+    $(".navbar-default").css('background-color', '#000');
+  </script>
+<style>
+
+
+
+body{
+   margin-bottom: 0px !important;
+   }
+
+.lop{
+  text-align: center;
+}
+
+.lop h2{
+  font-size: 2.5em;
+}
+
+.lop h3{
+  font-size: 1.5em;
+}
+
+</style>
+
+    <div class="actual" id= "actual" style = "margin-top:50px;">
+      <div class="container">
+        <div class = "content" id = "content">
+          <div class="content-wrap">
+            <h3>Search Results</h3>
+                  <ul class = "lop" id = "lop">
+                  </ul>
+                     
+            </div><!-- /content -->
+        </div><!-- /container -->
+      </div>
+    </div>
+    
+    <script>
+      (function() {
+
+        [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+          new CBPFWTabs( el );
+        });
+
+      })();
+    </script>
+    <script>
+
+    function dispit(){
+
+    document.getElementById('lop').innerHTML = placelist.map(function(place) {
+            return '<li class = "lcont"><a href = "#' + place.city.toLowerCase() +'/' + place.shorthand+'"><h2>' + place.name + '</h2><h3>' + place.categories + '</h3></a></li>';
+    }).join('');
+    
+    }
+    window.onload = function(){
+      dispit();
+    }
+    </script>
+ 

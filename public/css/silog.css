@@ -1,0 +1,47 @@
+body{margin-top:0px;padding: 0px}
+.jumbotron{
+  background-image:url('../Images/C.jpg');
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-bottom: 0px;
+  }
+.container{
+	display:block;
+	margin:0 auto;
+	padding: 6%;
+	padding-bottom: 0px;
+	padding-top: 0;	
+	
+}
+.form-bottom{
+	opacity: 0.8;
+}
+.row{
+	padding-top: 5%;
+}
+h1{
+	font-weight: 700;
+	padding-top: 25%;
+}
+.wel{
+	padding-top: 10%;
+	padding-bottom: 5%;
+	text-align:center;
+	font-weight:700;
+}
+.acc{
+	font-size: 25px;
+	font-weight: 600;
+	color:white;
+	text-decoration:none;
+	padding:4px;
+	border-radius: 15px;
+}
+a:hover{
+		text-decoration:none;
+		background-color:white;
+		color: rgba(0,0,0,0.75)
+}
+

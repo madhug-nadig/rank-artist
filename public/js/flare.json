@@ -1,0 +1,424 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "Bengaluru",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743},
+	  {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743},
+	  {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743},
+	  {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+   {
+   "name": "Delhi",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+  
+   {
+   "name": "Mumbai",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+   {
+   "name": "Hyderabad",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Kolkata",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+   {
+   "name": "Chennai",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743},
+	  {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Delhi",
+   "children": [
+    {
+     "name": "Wildlife",
+     "children": [
+      {"name": "AgglomerativeCluster", "size": 3938},
+      {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+    {
+     "name": "Hill",
+     "children": [
+      {"name": "BetweennessCentrality", "size": 3534},
+      {"name": "LinkDistance", "size": 5731},
+      {"name": "MaxFlowMinCut", "size": 7840},
+      {"name": "ShortestPaths", "size": 5914},
+      {"name": "SpanningTree", "size": 3416}
+     ]
+    },
+    {
+     "name": "Water",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074},
+	  {"name": "CommunityStructure", "size": 3812},
+      {"name": "HierarchicalCluster", "size": 6714},
+      {"name": "MergeEdge", "size": 743}
+     ]
+    },
+	{
+     "name": "Art",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Adventure",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "Architecture",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    },
+	{
+     "name": "History",
+     "children": [
+      {"name": "AspectRatioBanker", "size": 7074}
+     ]
+    }
+   ]
+  }
+ ]
+}

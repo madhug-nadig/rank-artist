@@ -1,0 +1,87 @@
+
+/*Jumbotron*/
+  .jumbotron {
+    position: relative;
+    background-image:url('../Images/DV.jpg');
+    width: 100%;
+    min-height: 100%;
+    background-color: black; 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     background-size: cover;
+     margin-bottom:0px;
+  }
+
+  .jumbotron .container-fluid {
+    position: relative;
+    top:105px;
+  }
+
+  .jumbotron h1 {
+    color: #fff;
+    font-size: 60px;  
+    font-family: Arial;
+    font-weight: 700;
+    opacity:1;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+
+.jumbotron a {
+  color: white;
+  font-weight:700;
+  text-decoration: none;
+  font-size:20px;  
+  border: 2px solid white;
+  padding:7px;
+  background-color: black;
+  opacity: 0.8;
+  margin-left:46.5%;
+}
+.jumbotron a:hover {
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  background-color: white;
+}
+
+
+/*Tab*/
+.content{
+	min-height:110%;
+	background-color: black;
+}
+
+.content svg{
+	min-height:110%;
+	display:block;
+	margin: auto;
+	padding-top: 3.2%;
+}
+
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}

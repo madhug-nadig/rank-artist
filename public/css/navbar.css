@@ -1,0 +1,87 @@
+html, body{height: 100%;min-height:100%;font-family: 'Raleway';}
+
+/*Header*/
+
+header .navbar {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:30px;
+  transition: all .5s ease-out;
+}
+header .navbar-brand {
+  background-repeat: no-repeat;
+  background-position: 15px 0;
+  height: auto;
+  margin-left:0px;
+}
+header .navbar-default {
+  background-color: rgba(0,0,0,0.1);
+  border:none !important;
+}
+
+header .navbar-default .navbar-nav li {
+  color: white;
+  font-size: 22px;
+  padding: 5px 8px;
+  font-weight: 700;
+}
+
+header .navbar-default .navbar-nav a {
+  color: white;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+header .navbar-default .navbar-nav a:active {
+  color: white;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+/**  Navbar Brand **/
+
+header .navbar-brand {
+	margin-left:0px;
+	padding: 0px;	
+}
+
+
+
+/*Navbar toggle*/
+
+header .navbar-toggle {
+  background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+  }
+}
+/*Links Navbar*/
+header .navbar-default .navbar-nav a:hover {
+  color: rgba(0,0,0,0.5);
+  background-color: white;
+  border: 2px solid white; 
+}
+header .navbar-default .navbar-nav a:focus{
+   color: white;
+}
+header .navbar-default .navbar-nav a:hover {
+  color: rgba(0,0,0,0.5);
+  background-color: white;
+  border: 2px solid white; 
+}
+
+/*footer*/
+footer{
+	background: black;
+	padding: 0px;
+	display: block;
+}

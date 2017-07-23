@@ -1,0 +1,93 @@
+
+/*Jumbotron*/
+
+.jumbotron {
+  position: relative;
+  background-image:url('../Images/B.jpg');
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+   background-size: cover;
+   margin-bottom:0px;
+}
+
+.jumbotron .container-fluid {
+  position: relative;
+  top:105px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 60px;  
+  font-family: 'Raleway', Arial;
+  font-weight: 700;
+  opacity:1;
+  margin-top:5%;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  text-align:center;
+  font-weight: 700;
+  opacity:1;
+  padding-top:10px;
+
+  }
+  
+.jumbotron a {
+  text-decoration: none;
+  width:15px;
+  }
+/*Search*/
+
+.search-area{
+	display:block;
+	padding-top: 100px;
+	margin-top: 100px;
+}
+
+#search-button {
+background:transparent;
+color:white;
+font: 'trebuchet ms', trebuchet;
+padding:13px 25px;
+border-radius:0 9px 9px 0;
+-moz-border-radius:0 9px 9px 0;
+-webkit-border-radius:0 9px 9px 0;
+-o-border-radius:0 10px 10px 0;
+border:2px solid white;
+font-weight:bold;
+margin-left:-4px;
+}
+ 
+#search-button:hover{
+ background-color: #5CDEBD;
+ border: 2px solid #5CDEBD;
+}
+ 
+#text-enter {
+background: white;
+padding:15px;
+ border-radius:10px 0 0 10px;
+-moz-border-radius:10px 0 0 10px;
+-webkit-border-radius:10px 0 0 10px;
+-o-border-radius:10px 0 0 10px;
+border:0 none;
+width:30%;
+ }
+ 
+ 
+/*btn*/
+.btn {
+  display: inline-block;
+  border-radius: 28px;
+  border: none;
+  height: 45px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
